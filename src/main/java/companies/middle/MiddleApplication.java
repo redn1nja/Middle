@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@GetMapping
 public class MiddleApplication {
 
     public static void main(String[] args) {
