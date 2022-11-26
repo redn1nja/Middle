@@ -14,6 +14,7 @@ public class MiddleApplication {
         SpringApplication.run(MiddleApplication.class, args);
     }
 
+    @GetMapping
     public String getStart(){
         return "Hello";
     }
