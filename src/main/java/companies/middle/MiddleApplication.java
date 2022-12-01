@@ -16,7 +16,8 @@ public class MiddleApplication {
 
     @GetMapping
     public String getStart(){
-        return "Hello";
-    }
+    return "Hello";
+}
+
 }
 
