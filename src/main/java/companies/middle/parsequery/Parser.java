@@ -1,19 +1,17 @@
 package companies.middle.parsequery;
 
 
+import companies.middle.queries.Request;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.SneakyThrows;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 
-public class Parser {
-    private static String toParse;
-    public Parser(String phrase){
-        toParse = phrase;
-    }
+public interface Parser {
+    public void company(String cmp);
+    public void key(String key);
     @SneakyThrows
-    public static String connection(){
-        Document doc = Jsoup.parse(toParse);
-        return null;
-    }
-    }
+    public Request ParseInfo();
+}
